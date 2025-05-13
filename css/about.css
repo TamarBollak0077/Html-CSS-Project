@@ -1,0 +1,296 @@
+html{
+margin-top: -60px;
+}
+body {
+    height: 100%;
+    width: 100%;
+    margin-top: -250px;
+}
+
+#warper {
+    width: 100%;
+    height: 100%;
+}
+
+#titlepic {
+    background-image: url(../תמונות/גלידה\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    position: fixed;
+    z-index: -1;
+}
+
+#koteret {
+    color: rgb(105, 74, 33);
+    text-align: center;
+    font-size: 200px;
+    font-family: 'Alaska';
+    letter-spacing: 10px;
+    line-height: 30vw;
+    height: 30vw;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+
+}
+
+
+.body {
+    background-color: rgb(250, 207, 229);
+    height: auto;
+    width: 100vw;
+}
+
+.FirstPiska {
+    background-color: rgb(238, 213, 226);
+    height: 75vh;
+    width: 100vw;
+    padding: 2.5vw;
+}
+
+.SecondPiska {
+    background-color: rgb(213, 238, 240);
+    height: 80vh;
+    width: 100vw;
+    padding: 2.5vw;
+}
+
+#Second66 {
+    float: left;
+    margin-right: 0vw;
+}
+
+#Second33 {
+    float: right;
+    margin-right: 4vw;
+}
+
+.ThirdPiska {
+    background-color: rgb(243, 208, 187);
+
+    height: 80vh;
+    width: 100vw;
+    padding: 2.5vw;
+}
+
+.row {
+    height: auto;
+    width: 100vw;
+}
+
+.column-66 {
+    font-size: 1vw;
+    font-family: 'AgudalMF';
+    float: right;
+    width: 55%;
+    padding: 1vw;
+    margin-right: 4vw;
+}
+
+h3 {
+    font-size: 4vw;
+    direction: rtl;
+    margin: 10px;
+    color: rgb(105, 74, 33);
+    font-family: 'DashMF';
+}
+
+#Bigspan {
+
+    font-size: 3vw;
+}
+
+p {
+    padding-bottom: 10px;
+    font-size: 1.5vw;
+}
+
+.button {
+    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+
+}
+
+#kishur {
+    border: 2px solid rgb(105, 74, 33);
+    background-color: rgb(105, 74, 33);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 56px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: AgudalMF;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+#kishur span {
+    position: relative;
+    z-index: 2;
+}
+
+#kishur::after {
+    border-radius: 25px;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(239, 25, 132);
+    transition: all .35s;
+}
+
+#kishur:hover {
+    color: black;
+}
+
+#kishur:hover:after {
+    width: 100%;
+}
+
+.column-33 {
+    float: left;
+    width: 40%;
+    padding: 1vw;
+}
+
+#pic {
+    border-radius: 25px;
+    display: block;
+    object-fit: cover;
+    margin: 10vh 0 10vh 5vw;
+    padding-top: 10px;
+    height: 20vw;
+}
+
+@media (max-width: 1000px) {
+   #koteret {
+        margin-top: 320px;
+        font-size: 5vw;
+    }
+
+    .FirstPiska {
+        height: 40vh;
+        padding: 1.5vw;
+    }
+
+    .SecondPiska {
+        height: 50vh;
+        padding: 1.5vw;
+    }
+
+    .ThirdPiska {
+        height: 50vh;
+        padding: 1.5vw;
+    }
+
+    #pic {
+        margin: 0vh 0 10vh 5vh;
+        padding-bottom: 10px;
+        height: 18vw;
+    }
+
+    footer {
+        grid-template-areas: "detailes picture ";
+        grid-template-columns: 50% 50%;
+    }
+    #kosher{
+        display: none;
+    }
+}
+
+@media (max-width:480px) {
+    /* h2 {
+        margin: none;
+    } */
+    p {
+        padding-bottom: 10px;
+        font-size: 2vw;
+    }
+    #koteret {
+        margin-top: 250px;
+        font-size: 70px;
+    }
+
+    .FirstPiska {
+        height: 35vh;
+        padding: 2.5vw;
+    }
+
+    .SecondPiska {
+        height: 35vh;
+        padding: 2.5vw;
+    }
+
+    .ThirdPiska {
+        height: 35vh;
+        padding: 2.5vw;
+    }
+
+    #pic {
+
+        margin: 0vh 0 10vh 2vw;
+        padding-top: 10px;
+        height: 25vw;
+    }
+    .button {
+        text-align: center;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    
+    }
+    #first{
+        margin-top: -10px;
+    }
+    #kishur {
+        border: 2px solid rgb(105, 74, 33);
+        background-color: rgb(105, 74, 33);
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 30px;
+        line-height: 40px;
+        font-size: 9px;
+        font-family: AgudalMF;
+        text-decoration: none;
+        color: white;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+    }
+    
+    #kishur span {
+        position: relative;
+        z-index: 2;
+    }
+    footer {
+        grid-template-areas: "detailes ";
+        grid-template-columns: 100%;
+    }
+    #kosher{
+        display: none;
+    }
+    #picture{
+        display: none;
+    }
+}

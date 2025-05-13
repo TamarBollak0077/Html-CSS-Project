@@ -1,0 +1,157 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(252, 206, 183);
+}
+
+@keyframes branchpic {
+    0% {
+        background-image: url(../animationimg/ניסוי\ 2.jpeg);
+    }
+
+    20% {
+        background-image: url(../animationimg/ניסוי\ 3.jpeg);
+    }
+
+    40% {
+        background-image: url(../animationimg/ניסוי\ 4.jpeg);
+    }
+
+    60% {
+        background-image: url(../animationimg/ניסוי\ 5.jpeg);
+    }
+
+    80% {
+        background-image: url(../תמונות/תמונת\ כותרת.jpg);
+    }
+
+    100% {
+        background-image: url(../animationimg/ניסוי\ 7.jpeg);
+    }
+}
+
+#koteret {
+    animation-name: branchpic;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    margin-top: -25vh;
+    margin-bottom: 50px;
+    color:  rgb(105, 74, 33);
+    text-align: center;
+    font-size: 200px;
+    font-family: 'Alaska';
+    letter-spacing: 10px;
+    height: 30vw;
+    width: 100vw;
+}
+
+#tavla {
+
+
+    height: 80%;
+    font-family: 'AgudalMF';
+    font-size: 1vw;
+    width: 100%;
+    margin-bottom: 100px;
+
+
+}
+
+table {
+    direction: rtl;
+    margin: auto;
+    width: 60%;
+    height: 90%;
+    border-collapse: collapse;
+    box-shadow:
+        0 4px 8px 0 rgb(51, 44, 44);
+}
+
+th {
+
+    text-align: center;
+    padding: 8px;
+    height: 5%;
+    background-color: rgb(139, 227, 231);
+}
+
+td {
+    text-align: center;
+    padding: 8px;
+    height: 5%;
+}
+
+#zugi {
+    background-color: rgb(238, 213, 226);
+}
+
+#ezugi {
+    background-color: white;
+}
+@media (max-width:1000px) {
+    footer {
+        grid-template-areas: "detailes picture ";
+        grid-template-columns: 50% 50%;
+    }
+    #kosher{
+        display: none;
+    }
+}
+@media (max-width:480px) {
+    body {
+        height: 50%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    #koteret {
+        margin-top: -220px;
+        font-size: 130px;
+        letter-spacing: 10px;
+        height: 50vw;
+        width: 100vw;
+    }
+    @keyframes branchpic {
+        0% {
+            background-image: url(../animationimg/ניסוי\ 2.jpeg);
+        }
+    
+        20% {
+            background-image: url(../animationimg/ניסוי\ 3.jpeg);
+        }
+    
+        40% {
+            background-image: url(../animationimg/ניסוי\ 4.jpeg);
+        }
+    
+        60% {
+            background-image: url(../animationimg/ניסוי\ 5.jpeg);
+        }
+    
+        80% {
+            background-image: url(../תמונות/תמונת\ כותרת.jpg);
+        }
+    
+        100% {
+            background-image: url(../animationimg/ניסוי\ 7.jpeg);
+        }
+    }
+    #tavla {
+        font-size: 2vw;
+        margin-bottom: 100px;
+    }
+    footer {
+        grid-template-areas: "detailes ";
+        grid-template-columns: 100%;
+    }
+    #kosher{
+        display: none;
+    }
+    #picture{
+        display: none;
+    }
+    table {  
+        width: 90%;
+        height: 90%;
+    }
+}

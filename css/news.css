@@ -1,0 +1,263 @@
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-position: top;
+    margin-bottom: -10vw;
+    background-image: url(../תמונות/16.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+section {
+    direction: rtl;
+    height: 80vh;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#warper {
+    display: grid;
+}
+
+#labkeform {
+    padding: 24px 0 24px 24px;
+    text-align: center;
+    color: rgb(156, 82, 119);
+    font-family: 'AgudalMF';
+    font-size: 1vw;
+}
+
+#form {
+    font-family: 'AgudalMF';
+    padding: 16px;
+    height: 67vh;
+    width: 30vw;
+    margin-top: 10vh;
+    margin-right: 60vw;
+
+    background-color: rgba(145, 149, 153, 0.63);
+
+}
+
+select {
+    margin: auto;
+    margin-top: 12px;
+    border: none;
+    padding: 12px;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    margin: 0%;
+    height: 50%;
+}
+
+h1 {
+    text-align: right;
+    color: rgb(94, 42, 68);
+    font-family: 'AgudalMF';
+    font-size: 1.5vw;
+    margin: 8px;
+}
+
+h2 {
+    margin: 8px;
+    text-align: right;
+    color: rgb(94, 42, 68);
+    font-family: 'AgudalMF';
+    font-size: 1.1vw;
+}
+
+input {
+    margin: auto;
+    margin-top: 12px;
+    border: none;
+    padding: 12px;
+    width: 100%;
+}
+
+#shlach {
+    background-color: rgb(156, 82, 119);
+    margin-top: 20px;
+}
+
+#sof1 {
+    margin: 8px;
+    text-align: center;
+    color: rgb(94, 42, 68);
+    font-family: 'AgudalMF';
+    font-size: 3vw;
+}
+
+#sof2 {
+    margin: 8px;
+    text-align: center;
+    color: rgb(94, 42, 68);
+    font-family: 'AgudalMF';
+    font-size: 2vw;
+}
+
+#form1 {
+    font-family: 'AgudalMF';
+    padding: 16px;
+    height: 47vh;
+    width: 30vw;
+    margin-top: 30vh;
+    margin-right: 60vw;
+    background-color: rgba(145, 149, 153, 0.63);
+
+}
+
+@media (max-width:1000px) {
+    #labkeform {
+        padding: 24px 0 24px 24px;
+        text-align: center;
+        color: rgb(156, 82, 119);
+        font-family: 'AgudalMF';
+        font-size: 1.5vw;
+    }
+
+    h1 {
+        font-size: 2vw;
+    }
+
+    h2 {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width:480px) {
+
+    body {
+background-image: url(../תמונות/רקע\ לאייפון.jpg);
+    }
+
+    #form {
+        width: 60vw;
+        margin-right: 30vw;
+        margin-top: 5vh;
+
+    }
+
+    #shlach {
+        margin-top: 0px;
+    }
+
+    #labkeform {
+
+        font-size: 4vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+    #sof1 {
+        margin: 8px;
+        text-align: center;
+        color: rgb(94, 42, 68);
+        font-family: 'AgudalMF';
+        font-size: 5vw;
+    }
+
+    #sof2 {
+        margin: 8px;
+        text-align: center;
+        color: rgb(94, 42, 68);
+        font-family: 'AgudalMF';
+        font-size: 4vw;
+    }
+
+    #form1 {
+        height: 47vh;
+        width: 60vw;
+        margin-top: 30vh;
+        margin-right: 20vw;
+        background-color: rgba(145, 149, 153, 0.63);
+
+    }
+
+    footer {
+        width: 100vw;
+        height: 13vh;
+        display: grid;
+        grid-template-areas: "detailes picture kosher";
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        background-color: rgb(105, 74, 33);
+
+    }
+
+    .detailes {
+        height: 13vh;
+        grid-area: detailes;
+        color: white;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        padding: 5px;
+        border-right: solid 1px rgb(253, 191, 222);
+        bottom: 0px;
+    }
+
+    #zorkesher {
+        height: 13vh;
+        margin: 10px;
+        color: rgb(75, 239, 247);
+    }
+
+    #picture {
+        height: 13vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: solid 1px rgb(253, 191, 222);
+        bottom: 0px;
+    }
+
+    img {
+        height: 100px;
+
+    }
+
+    #badatz {
+        margin-top: -0.6px;
+        height: 5vh;
+        width: 20vw;
+
+        z-index: 3;
+    }
+
+    #kosher {
+        height: 13vh;
+        bottom: 0px;
+    }
+
+    #maximum {
+        color: rgb(75, 239, 247);
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+        font-size: 80%;
+        margin-top: -20px;
+
+
+    }
+
+    #rights {
+        color: rgb(255, 183, 147);
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 300;
+        font-size: 8px;
+        margin-top: -22px;
+    }
+}

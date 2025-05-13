@@ -1,0 +1,305 @@
+#body {
+    direction: rtl;
+    margin-top: -7px;
+    width: 100%;
+    height: 480vh;
+    background-color: rgb(247, 206, 224);
+    font-family: 'AgudalMF';
+}
+
+#title {
+    text-align: center;
+    margin-top: 85px;
+    margin-bottom: 4vh;
+    font-size: 5vh;
+    color: rgb(156, 82, 119);
+}
+
+#titleRashit {
+    font-size: 7vh;
+    font-weight: 800;
+    margin-top: 150px;
+
+}
+
+.titleMishne {
+    font-family: 'DashMF';
+    font-size: 5vh;
+    color: rgb(34, 125, 129);
+}
+
+#main {
+    width: 1000px;
+    margin: auto;
+    padding: 8px;
+    display: grid;
+}
+
+#firstrow {
+    text-align: center;
+    margin: 8px;
+    padding: 8px;
+
+}
+
+#content {
+
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2),
+        0 6px 20px 0 rgb(0, 0, 0, 0.19);
+}
+
+#tastes {
+    border-radius: 25px;
+    width: 100%;
+    height: 22vh;
+    object-fit: cover;
+}
+
+#column {
+    float: right;
+    padding: 8px;
+    width: 25%;
+
+}
+
+#row {
+    margin-bottom: 30px;
+
+}
+
+#row:hover {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#kind {
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px 20px;
+    height: 25vh;
+    color: rgb(34, 125, 129);
+}
+
+#dropup {
+
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropbtn {
+    font-family: 'DashMF';
+    letter-spacing: 0.1vw;
+    background-color: rgb(54, 179, 185);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    color: rgb(34, 125, 129);
+    background-color: rgb(238, 212, 231);
+    min-width: 100%;
+    bottom: 50px;
+    z-index: 1;
+}
+
+#dropup:hover .dropup-content {
+    display: block;
+}
+
+#dropup:hover .dropbtn {
+    cursor: pointer;
+    background-color: rgb(146, 224, 228);
+}
+
+#lavan {
+    background-color: white;
+}
+
+#dropup:hover #lavan {
+    background-color: white;
+    cursor: auto;
+}
+
+.button {
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+
+}
+
+#kishur {
+    border: 2px solid rgb(105, 74, 33);
+    background-color: rgb(105, 74, 33);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 56px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: AgudalMF;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+#kishur span {
+    position: relative;
+    z-index: 2;
+}
+
+#kishur::after {
+    border-radius: 25px;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(54, 179, 185);
+    transition: all .35s;
+}
+
+#kishur:hover {
+    color: black;
+}
+
+#kishur:hover:after {
+    width: 100%;
+}
+
+@media (max-width:1000px) {
+    #column {
+        float: right;
+        padding: 8px;
+        width: 23%;
+
+    }
+    #body {
+        direction: rtl;
+        margin-top: -7px;
+        width: 100%;
+        height: 400vh;
+        background-color: rgb(247, 206, 224);
+        font-family: 'AgudalMF';
+    }
+    #kind {
+        border-radius: 25px;
+        text-align: center;
+        padding: 10px 20px;
+        height: 20vh;
+        color: rgb(34, 125, 129);
+    }
+
+    #row {
+        margin-bottom: 30px;
+        margin-right: 60px;
+    
+    }
+    #titleRashit {
+        font-size:6vh;
+        font-weight: 800;
+        margin-top: 150px;
+    
+    }
+    
+    .titleMishne {
+        font-family: 'DashMF';
+        font-size:3.5vh;
+        color: rgb(34, 125, 129);
+    }
+    footer {
+        grid-template-areas: "detailes picture ";
+        grid-template-columns: 50% 50%;
+    }
+    #kosher{
+        display: none;
+    }
+
+}
+
+@media (max-width:480px) {
+    #column {
+        float: right;
+        padding: 8px;
+        width: 96%;
+
+
+    }
+
+    #kind {
+        border-radius: 25px;
+        text-align: center;
+        padding: 10px 20px;
+        height: 20vh;
+        color: rgb(34, 125, 129);
+    }
+
+    #row {
+        /* padding: 30px; */
+        margin: auto;
+        width: 460px;
+    }
+    #body {
+        direction: rtl;
+        margin-top: -7px;
+        width: 100%;
+        height: 1000vh;
+        background-color: rgb(247, 206, 224);
+        font-family: 'AgudalMF';
+    }
+    #main {
+        width: 480px;
+        margin: auto;
+        padding: 8px;
+        display: grid;
+        /* height: 4000px; */
+    }
+   
+    
+    #titleRashit {
+        font-size:5vh;
+        font-weight: 800;
+        margin-top: 150px;
+    
+    }
+    
+    .titleMishne {
+        font-family: 'DashMF';
+        font-size:3vh;
+        color: rgb(34, 125, 129);
+    }
+    
+    footer {
+        grid-template-areas: "detailes ";
+        grid-template-columns: 100%;
+    }
+    #kosher{
+        display: none;
+    }
+    #picture{
+        display: none;
+    }
+    table {  
+        width: 90%;
+        height: 90%;
+    }
+}
